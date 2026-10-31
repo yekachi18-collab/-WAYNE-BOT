@@ -37,12 +37,4 @@ async function startBot() {
             await sock.sendMessage(from, { text: `*Pong!* 🏓\nWAYNE BOT v${config.version} is active!\nOwner: ${config.ownerName}` })
         }
         if (command === 'menu' || command === 'help') {
-            await sock.sendMessage(from, { text: `*${config.botName} MENU*\n\n.ping - Check bot\n.menu - This menu\n.owner - Owner info\n\nBot by ${config.ownerName} 🥰` })
-        }
-        if (command === 'owner') {
-            await sock.sendMessage(from, { text: `*OWNER:* ${config.ownerName}\n*BOT:* ${config.botName}\n*NUMBER:* ${config.ownerNumber}` })
-        }
-    })
-}
-
-startBot()
+            await sock.sendMessage(from, { text: `*${config
